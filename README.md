@@ -78,8 +78,7 @@ A **single-page, dependency-free web tool** that bookstore staff can pull up on 
 
 ## 🌐 Live Demo
 
-> 🔗 **[View Live on Vercel](#)** — *replace with your deployment URL after deploying*
-
+> 🔗 **[View Live on Vercel](#)** 
 ---
 
 ## 🚀 Getting Started
@@ -92,8 +91,8 @@ None. Literally. Just a browser. 🎉
 
 **Option 1 — Direct**
 ```bash
-git clone https://github.com/<your-username>/eng-18072-bookstore-events.git
-cd eng-18072-bookstore-events
+git clone https://github.com/y-ro9/Independent-Bookstore-Event-Page.git
+cd Independent-Bookstore-Event-Page
 open index.html      # macOS
 # or
 start index.html     # Windows
