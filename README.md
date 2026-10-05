@@ -120,7 +120,7 @@ Expected output: **zero warnings, zero errors.**
 ## 📁 Project Structure
 
 ```
-eng-18072-bookstore-events/
+independent-bookstore-event-page/
 ├── index.html        # Semantic HTML5 markup
 ├── styles.css        # Vanilla CSS (design tokens + layout)
 ├── app.js            # Vanilla JS (state, render, validation, sanitization)
@@ -175,7 +175,7 @@ eng-18072-bookstore-events/
 | 2 | ESLint clean (zero warnings) | ✅ |
 | 3 | Happy + Unhappy path acceptance criteria met | ✅ |
 | 4 | No hardcoded API keys or PII | ✅ |
-| 5 | Hosted on personal GitHub + deployed | ⏳ *pending deploy* |
+| 5 | Hosted on personal GitHub + deployed | ✅ |
 
 ---
 
