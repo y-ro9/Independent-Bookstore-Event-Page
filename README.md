@@ -78,7 +78,7 @@ A **single-page, dependency-free web tool** that bookstore staff can pull up on 
 
 ## 🌐 Live Demo
 
-> 🔗 **[View Live on Vercel](#)** 
+> 🔗 **[View Live on Vercel](https://independent-bookstore-event-page.vercel.app/)** 
 ---
 
 ## 🚀 Getting Started
