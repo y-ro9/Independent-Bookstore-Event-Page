@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Independent Bookstore Events Page for floor staff" />
+  <title>Independent Bookstore — Events</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <h1>Independent Bookstore</h1>
+    <p class="subtitle">Events Management</p>
+  </header>
+
+  <main id="main">
+    <section class="panel" aria-labelledby="search-heading">
+      <h2 id="search-heading">Search Events</h2>
+      <label for="search-input">Search by title or author</label>
+      <input
+        type="search"
+        id="search-input"
+        name="search"
+        placeholder="e.g. Poetry Night"
+        aria-describedby="search-help"
+        autocomplete="off"
+      />
+      <p id="search-help" class="help-text">Type to filter the events list below.</p>
+    </section>
+
+    <section class="panel" aria-labelledby="list-heading">
+      <h2 id="list-heading">Upcoming Events</h2>
+
+      <div id="loading" class="loading" role="status" aria-live="polite" hidden>
+        <span class="spinner" aria-hidden="true"></span>
+        <span>Loading events…</span>
+      </div>
+
+      <ul id="event-list" class="event-list" aria-live="polite"></ul>
+
+      <p id="empty-state" class="empty-state" hidden>
+        No data found. Try a different search or add a new event.
+      </p>
+    </section>
+
+    <section class="panel" aria-labelledby="form-heading">
+      <h2 id="form-heading">Add New Event</h2>
+
+      <form id="event-form" novalidate>
+        <div class="field">
+          <label for="event-title">Event Title *</label>
+          <input type="text" id="event-title" name="title" required aria-required="true"
+                 aria-describedby="title-error" />
+          <p id="title-error" class="error-text" role="alert" hidden></p>
+        </div>
+
+        <div class="field">
+          <label for="event-author">Author / Guest *</label>
+          <input type="text" id="event-author" name="author" required aria-required="true"
+                 aria-describedby="author-error" />
+          <p id="author-error" class="error-text" role="alert" hidden></p>
+        </div>
+
+        <div class="field">
+          <label for="event-date">Date *</label>
+          <input type="date" id="event-date" name="date" required aria-required="true"
+                 aria-describedby="date-error" />
+          <p id="date-error" class="error-text" role="alert" hidden></p>
+        </div>
+
+        <div class="field">
+          <label for="event-time">Time *</label>
+          <input type="time" id="event-time" name="time" required aria-required="true"
+                 aria-describedby="time-error" />
+          <p id="time-error" class="error-text" role="alert" hidden></p>
+        </div>
+
+        <div class="field">
+          <label for="event-capacity">Capacity *</label>
+          <input type="number" id="event-capacity" name="capacity" min="1" max="500"
+                 required aria-required="true" aria-describedby="capacity-error" />
+          <p id="capacity-error" class="error-text" role="alert" hidden></p>
+        </div>
+
+        <button type="submit">Add Event</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© Independent Bookstore — Internal Events Tool (POC)</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
